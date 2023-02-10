@@ -1,3 +1,4 @@
+# Final project for Crash Course Python on Coursera
 import wordcloud
 import numpy as np
 from matplotlib import pyplot as plt
