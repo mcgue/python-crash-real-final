@@ -9,6 +9,16 @@ import sys
 with open('dick.txt') as f:
     contents = f.read()
 
+contents = contents.replace('\n', ' ')
+contents = contents.replace('\n', ' ')
+
+# Create list
+contents_into_list = []
+
+# Replace newline
+
+contents_into_list = contents.split(" ")
+
 punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an", "as", "i", "me", "my",
                        "we", "our", "ours", "you", "your", "yours", "he", "she", "him", "his", "her",
@@ -22,4 +32,4 @@ def print_hi(name):
     print(f'Hi, {name}')
 
 if __name__ == '__main__':
-    print(contents)
+    print(contents_into_list)
