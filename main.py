@@ -18,7 +18,6 @@ uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "a
                        "where", "how", "all", "any", "both", "each", "few", "more", "some", "such",
                        "no", "nor", "too", "very", "can", "will", "just"]
 
-
 def print_hi(name):
     print(f'Hi, {name}')
 
