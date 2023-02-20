@@ -9,11 +9,8 @@ import sys
 with open('moby-dick.txt', 'r', encoding='utf-8') as f:
     contents = f.read()
 
-# my_file = open("moby-dick.txt", "r", encoding='utf-8')
-# contents = my_file.read()
-
 contents = contents.replace('\n', ' ')
-# contents = contents.replace('.', ' ')
+contents = contents.replace('.', ' ')
 
 # Create list
 contents_into_list = []
