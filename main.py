@@ -13,9 +13,6 @@ with open('moby-dick.txt', 'r', encoding='utf-8') as f:
 file_contents = file_contents.replace('\n', ' ')
 file_contents = file_contents.replace('. ', ' ')
 
-# Create list
-#file_contents = []
-
 # Split into list by spaces
 file_contents = file_contents.split(" ")
 
