@@ -7,17 +7,17 @@ import sys
 
 # Open file and put text into file
 with open('moby-dick.txt', 'r', encoding='utf-8') as f:
-    contents = f.read()
+    file_contents = f.read()
 
 # Replace newlines and periods with blank spaces
-contents = contents.replace('\n', ' ')
-contents = contents.replace('. ', ' ')
+file_contents = file_contents.replace('\n', ' ')
+file_contents = file_contents.replace('. ', ' ')
 
 # Create list
-contents_into_list = []
+#file_contents = []
 
 # Split into list by spaces
-contents_into_list = contents.split(" ")
+file_contents = file_contents.split(" ")
 
 # punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an", "as", "i", "me", "my",
@@ -32,7 +32,7 @@ uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "a
 contents_interesting = []
 
 # Add words with only alpha characters and not in uninteresting list
-for word in contents_into_list:
+for word in file_contents:
     word = word.lower()
     if word not in uninteresting_words:
         if word.isalpha():
@@ -41,6 +41,18 @@ for word in contents_into_list:
 # Blank dictionary
 contents_counts = {}
 
+# Create dictionary with unique words and their frequency count
+for word in contents_interesting:
+    if word in contents_counts:
+        contents_counts[word] +=1
+    else:
+        contents_counts[word] = 1
+
+#wordcloud
+def word_cloud(dict)
+    cloud = wordcloud.WordCloud()
+    cloud.generate_from_frequencies(dict)
+    return cloud.to_array()
 
 if __name__ == '__main__':
-    print(contents_interesting)
+    print(contents_counts)
