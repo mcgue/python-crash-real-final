@@ -1,9 +1,7 @@
 # Final project for Crash Course Python on Coursera
+# Finished, although could simplify code
 import wordcloud
-import numpy as np
 from matplotlib import pyplot as plt
-import io
-import sys
 
 def calculate_frequencies(file_contents):
     uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an", "as", "i", "me", "my",
