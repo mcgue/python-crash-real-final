@@ -1,5 +1,6 @@
 # Final project for Crash Course Python on Coursera
 # Finished, although could simplify code
+# Need to import wordcloud
 import wordcloud
 import numpy as np
 from matplotlib import pyplot as plt
